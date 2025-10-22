@@ -1,6 +1,8 @@
-# Profile Card Component
+# Frontend Wizards — Stage 1 Task
 
-A responsive and accessible profile card component built with vanilla HTML, CSS, and JavaScript.
+## Overview
+
+A three-page responsive web application including a profile card, contact form with validation, and about page. Built with vanilla HTML, CSS, and JavaScript following accessibility and semantic web standards.
 
 ## Live Demo
 
@@ -8,11 +10,11 @@ A responsive and accessible profile card component built with vanilla HTML, CSS,
 
 ## Features
 
-- Responsive layout optimized for mobile, tablet, and desktop
-- Accessible semantic HTML structure
-- Real-time timestamp display
-- Interactive social links
-- Hover animations and modern UI
+- Profile card from Stage 0 with real-time timestamp
+- Contact Us form with client-side validation and toast notifications
+- About Me page with semantic sections
+- Responsive design for mobile, tablet, and desktop
+- Accessible navigation and form controls
 - BEM methodology for CSS
 - No frameworks or dependencies
 
@@ -26,12 +28,12 @@ A responsive and accessible profile card component built with vanilla HTML, CSS,
 
 ```
 profile-card/
-│
 ├── index.html
+├── contact.html
+├── about.html
 ├── style.css
 ├── script.js
-├── assets/
-│   └── Profile.jpg
+├── Profile.jpg
 └── README.md
 ```
 
@@ -40,7 +42,7 @@ profile-card/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/profile-card.git
+git clone https://github.com/ISyncPlus/profile-card.git
 ```
 
 2. Navigate to project directory:
@@ -49,7 +51,7 @@ git clone https://github.com/your-username/profile-card.git
 cd profile-card
 ```
 
-3. Open index.html in your browser or use a local server:
+3. Open any HTML file in your browser or use a local server:
 
 ```bash
 # Using Python
@@ -61,7 +63,9 @@ npx serve
 
 ## Testing
 
-The component includes data-testid attributes for automated testing:
+The application includes data-testid attributes for automated testing:
+
+**Profile Card:**
 
 - test-profile-card
 - test-user-avatar
@@ -72,18 +76,27 @@ The component includes data-testid attributes for automated testing:
 - test-user-hobbies
 - test-user-dislikes
 
-## Contributing
+**Contact Form:**
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- test-contact-page
+- test-contact-name
+- test-contact-email
+- test-contact-subject
+- test-contact-message
+- test-contact-submit
+- test-contact-success
+- test-contact-error-\* (for validation errors)
 
-## License
+**About Page:**
 
-This project is licensed under the MIT License - see the LICENSE file for details
+- test-about-page
+- test-about-bio
+- test-about-goals
+- test-about-confidence
+- test-about-future-note
+- test-about-extra
 
 ## Author
 
-Made with 💙 by Ebube Ezedimbu
+Ebube Emmanuel Ezedimbu  
+[GitHub](https://github.com/ISyncPlus)
