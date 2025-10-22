@@ -3,84 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Card - HNG Test 0</title>
+    <title>Profile Card - Frontend Wizards Stage 1</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <article class="card" data-testid="test-profile-card">
-      <header class="card__header">
-        <figure class="card__figure">
-          <img
-            class="card__avatar"
-            data-testid="test-user-avatar"
-            src="/Profile.jpg"
-            alt="User avatar"
-          />
-        </figure>
-
-        <div class="card__info">
-          <h2 class="card__name" data-testid="test-user-name">
-            Ebube Emmanuel Ezedimbu
-          </h2>
-          <p class="card__bio" data-testid="test-user-bio">
-            Junior Fullstack Developer(MERN) - Frontend Focused | React.js,
-            TypeScript, Next.js | Crafting Fast, Responsive, Fullstack Web Apps
-          </p>
-          <span class="card__time" data-testid="test-user-time"></span>
-        </div>
-      </header>
-
-      <nav class="card__social" data-testid="test-user-social-links">
-        <ul class="card__social-list">
-          <li class="card__social-item">
-            <a
-              class="card__social-link"
-              href="https://github.com/ISyncPlus"
-              data-testid="test-user-social-github"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
-          </li>
-          <li class="card__social-item">
-            <a
-              class="card__social-link"
-              href="https://linkedin.com/in/ebube-ezedimbu"
-              data-testid="test-user-social-linkedin"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
+  <body class="page page--profile">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav__link site-nav__link--active" href="index.html"
+          >Profile</a
+        >
+        <a class="site-nav__link" href="contact.html">Contact</a>
+        <a class="site-nav__link" href="about.html">About</a>
       </nav>
+    </header>
 
-      <div class="card__sections-wrapper">
-        <section class="card__section" data-testid="test-user-hobbies">
-          <h3 class="card__section-title">Hobbies</h3>
-          <ul class="card__list">
-            <li class="card__list-item">Watching anime</li>
-            <li class="card__list-item">Writing Code</li>
-            <li class="card__list-item">Video gaming</li>
-            <li class="card__list-item">Food</li>
-          </ul>
-        </section>
+    <main class="page__content">
+      <article class="card" data-testid="test-profile-card">
+        <header class="card__header">
+          <figure class="card__figure">
+            <img
+              class="card__avatar"
+              data-testid="test-user-avatar"
+              src="Profile.jpg"
+              alt="User avatar"
+            />
+            <input
+              class="card__avatar-input"
+              type="file"
+              id="avatar-upload"
+              accept="image/*"
+              aria-label="Upload custom avatar"
+            />
+          </figure>
 
-        <section class="card__section" data-testid="test-user-dislikes">
-          <h3 class="card__section-title">Dislikes</h3>
-          <ul class="card__list">
-            <li class="card__list-item">Stress</li>
-            <li class="card__list-item">Rough/uncommented code</li>
-            <li class="card__list-item">Slow Network</li>
-            <li class="card__list-item">Overly Energetic People</li>
+          <div class="card__info">
+            <h2 class="card__name" data-testid="test-user-name">
+              Ebube Emmanuel Ezedimbu
+            </h2>
+            <p class="card__bio" data-testid="test-user-bio">
+              Junior Fullstack Developer (MERN) — Frontend Focused | React.js,
+              TypeScript, Next.js | Crafting fast, responsive, fullstack web
+              apps.
+            </p>
+            <span
+              class="card__time"
+              data-testid="test-user-time"
+              aria-live="polite"
+            ></span>
+          </div>
+        </header>
+
+        <nav
+          class="card__social"
+          data-testid="test-user-social-links"
+          aria-label="Social profiles"
+        >
+          <ul class="card__social-list">
+            <li class="card__social-item">
+              <a
+                class="card__social-link"
+                href="https://github.com/ISyncPlus"
+                data-testid="test-user-social-github"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+            <li class="card__social-item">
+              <a
+                class="card__social-link"
+                href="https://linkedin.com/in/ebube-ezedimbu"
+                data-testid="test-user-social-linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
           </ul>
-        </section>
-      </div>
-    </article>
-    <script src="main.js"></script>
+        </nav>
+
+        <div class="card__sections-wrapper">
+          <section class="card__section" data-testid="test-user-hobbies">
+            <h3 class="card__section-title">Hobbies</h3>
+            <ul class="card__list">
+              <li class="card__list-item">Watching anime</li>
+              <li class="card__list-item">Writing code</li>
+              <li class="card__list-item">Video gaming</li>
+              <li class="card__list-item">Exploring food culture</li>
+            </ul>
+          </section>
+
+          <section class="card__section" data-testid="test-user-dislikes">
+            <h3 class="card__section-title">Dislikes</h3>
+            <ul class="card__list">
+              <li class="card__list-item">Stress</li>
+              <li class="card__list-item">Uncommented code</li>
+              <li class="card__list-item">Slow networks</li>
+              <li class="card__list-item">Overly noisy spaces</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js" defer></script>
   </body>
 </html>

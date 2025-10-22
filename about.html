@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Frontend Wizards Stage 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page page--about">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav__link" href="index.html">Profile</a>
+        <a class="site-nav__link" href="contact.html">Contact</a>
+        <a class="site-nav__link site-nav__link--active" href="about.html"
+          >About</a
+        >
+      </nav>
+    </header>
+
+    <main class="page__content about" data-testid="test-about-page">
+      <header class="about__header">
+        <h1 class="about__title">About Me</h1>
+        <p class="about__subtitle">
+          A deeper look into my journey, goals, and reflections.
+        </p>
+      </header>
+
+      <section class="about__section" data-testid="test-about-bio">
+        <h2 class="about__section-title">Bio</h2>
+        <p class="about__section-text">
+          I'm Ebube, a frontend dev figuring out the full-stack path one project
+          at a time. I wrapped up my SIWES program recently and I'm still glued
+          to React, Tailwind, JavaScript, and a bit of Express. Most of what I
+          know comes from building small things like a JS calculator and a
+          little inventory manager, then breaking and fixing them until they
+          feel right.
+        </p>
+      </section>
+
+      <section class="about__section" data-testid="test-about-goals">
+        <h2 class="about__section-title">Goals in This Program</h2>
+        <ul class="about__list">
+          <li class="about__list-item">
+            Ship more real projects so the full-stack workflow stops feeling
+            like theory.
+          </li>
+          <li class="about__list-item">
+            Stay consistent with practice, even when life gets loud.
+          </li>
+          <li class="about__list-item">
+            Get comfortable enough to branch into Dart and Flutter when the time
+            comes.
+          </li>
+        </ul>
+      </section>
+
+      <section class="about__section" data-testid="test-about-confidence">
+        <h2 class="about__section-title">Areas of Low Confidence</h2>
+        <p class="about__section-text">
+          I still trip over backend structure and performance debugging. When an
+          API slows down or state blows up, I waste time guessing instead of
+          knowing what to check. That's the muscle I'm trying to build right
+          now.
+        </p>
+      </section>
+
+      <section class="about__section" data-testid="test-about-future-note">
+        <h2 class="about__section-title">Note to Future Self</h2>
+        <p class="about__section-text">
+          Keep the pace steady. Ask why things work. Don't rush past the basics.
+          Finish what you start, then move to the next thing. Dart and Flutter
+          will be waiting when the foundation feels solid.
+        </p>
+      </section>
+
+      <section class="about__section" data-testid="test-about-extra">
+        <h2 class="about__section-title">Extra Thoughts</h2>
+        <p class="about__section-text">
+          When I'm not pushing commits, I'm probably catching up on anime,
+          telling stories with friends, or getting lost in a game. Those breaks
+          keep me sane and make the next line of code a little easier to write.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
