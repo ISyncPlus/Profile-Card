@@ -4,7 +4,7 @@ A responsive and accessible profile card component built with vanilla HTML, CSS,
 
 ## Live Demo
 
-[View Demo](https://your-username.github.io/profile-card/)
+[View Demo](https://profile-card-chi-orcin.vercel.app/)
 
 ## Features
 
